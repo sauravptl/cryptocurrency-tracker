@@ -18,7 +18,7 @@ candles = client.get_candles(
     'binance',  # exchange
     'XLM',      # base_trading_symbol
     'BTC',      # quote_trading_symbol
-    '15m'       # interval
+    '15m',      # interval
 )
 
 # Create lists to store data
@@ -55,7 +55,8 @@ fig.update_xaxes(
             dict(count=5, label="5m", step="minute", stepmode="backward"),
             dict(count=15, label="15m", step="minute", stepmode="backward"),
             dict(count=1, label="1h", step="hour", stepmode="backward"),
-            dict(count=4, label="4h", step="hour", stepmode="backward")
+            dict(count=4, label="4h", step="hour", stepmode="backward"),
+            dict(count=0, label="all", step="all", stepmode="backward")
         ])
     )
 )
